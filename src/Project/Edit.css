@@ -1,0 +1,403 @@
+.footer {
+    display: grid;
+    text-align: center;
+    /* background-color: rgb(179, 179, 215); */
+    grid-template-columns: repeat(12fr, 1fr);
+    /* grid-template-rows: auto 1fr auto; */
+
+}
+
+
+.footer1 {
+    display: grid;
+    text-align: center;
+}
+
+
+
+/* .body2{
+    background-color: rgb(99, 41, 216);
+    background-image: url(Pizza1.jpg);    
+    height: 70vh;
+    
+} */
+
+
+.color {
+    text-align: center;
+    color: aliceblue;
+    background-color: burlywood;
+}
+
+.color1 {
+    text-align: right;
+    color: aliceblue;
+    background-color: burlywood;
+}
+
+
+.body3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url(Pizza1.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: 100%;
+    height: 70vh;
+}
+
+
+.footer1 {
+    /* display: grid; */
+
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+}
+
+
+.footer3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+}
+
+.footer4 {
+    grid-column-start: 7;
+    grid-column-end: 12;
+}
+
+.footer5 {
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+/* .body{
+    background-color: aqua;
+} */
+
+
+
+/* LOGIN */
+
+
+.login {
+    /* background-image: url(pizza3.jpg); */
+    text-align: center;
+}
+
+.login1 {
+    display: grid;
+    /* grid-template-columns: repeat(1fr,1fr); */
+    grid-template-columns: 1fr 2fr;
+    border-color: black;
+    border: 1px solid red;
+    grid-template-rows: 1fr;
+    height: 80vh;
+}
+
+.login2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url(../Project/pizza4.jpg);
+}
+
+.login3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    border: 1px solid red;
+}
+
+
+
+/* About */
+
+/* .image{
+    background-image: url(./aboutimg.jpg);
+} */
+
+.about {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutTop {
+    width: 100%;
+    height: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.aboutBottom {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.aboutBottom p {
+    width: 1200px;
+}
+
+.about .aboutBottom h1 {
+    font-weight: 400;
+    font-size: 70px;
+    color: red;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+}
+
+
+                                /* .login */
+
+
+.login {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    border: .2px solid white;
+}
+
+#b1 {
+    border: 0.2px solid white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url(pizza4.jpg);
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#b2 {
+    border: 1px solid sandybrown;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /* background-image: url(./img12.webp); */
+    /* background-image: url('./login2.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* opacity: 0.5; */
+    /* transition: ; */
+}
+
+table {
+    margin-top: 300px;
+    margin-left: 100px;
+    color: rgb(100, 20, 49, );
+}
+
+
+                            /* Menu */
+.grid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(12,1fr);
+    border: 1px solid black;
+    height: 100vh;
+    gap: 10px;
+    
+}
+#a1{
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 13;
+}
+#a2{
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border-radius: 25px;
+    background-image: url('./img1.webp');
+    background-size: cover;
+    color: white;
+    font-size: large;
+    font-family: cursive;
+}
+#a3{
+    border: 1px solid blue;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border-radius: 25px;
+    background-image: url('./img2.jpg');
+    background-size: cover;
+    color: white;
+}
+#a4{
+    border: 1px solid blue;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border-radius: 25px;
+    background-image: url('./img3.jpg');
+    background-size: cover;
+    color: white;
+}
+#a5{
+    border: 1px solid blue;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border-radius: 25px;
+    background-image: url('./img4.jpg');
+    background-size: cover;
+    color: white;
+}
+#a6{
+    border: 1px solid blue;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    border-radius: 25px;
+    background-image: url('./img5.jpg');
+    background-size: cover;
+    color: white;
+}
+#a7{
+    border: 1px solid blue;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    border-radius: 25px;
+    background-image: url('./img6.jpg');
+    background-size: cover;
+    color: white;
+}
+#a8{
+    border: 1px solid blue;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    border-radius: 25px;
+    background-image: url('./img7.jpg');
+    background-size: cover;
+    color: white;
+}
+#a9{
+    border: 1px solid blue;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    border-radius: 25px;
+    background-image: url('./img8.jpg');
+    background-size: cover;
+    color: white;
+}
+#a10{
+    border: 1px solid blue;
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-start: 9;
+    grid-row-end: 13;
+    border-radius: 25px;
+    background-image: url('./img9.webp');
+    background-size: cover;
+    color: white;
+}
+#a11{
+    border: 1px solid blue;
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 9;
+    grid-row-end: 13;
+    border-radius: 25px;
+    background-image: url('./img10.webp');
+    background-size: cover;
+    color: white;
+}
+#a12{
+    border: 1px solid blue;
+    grid-column-start: 4;
+    grid-column-end:5;
+    grid-row-start: 9;
+    grid-row-end: 13;
+    border-radius: 25px;
+    background-image: url('./img11.webp');
+    background-size: cover;
+    color: white;
+}
+#a13{
+    border: 1px solid blue;
+    grid-column-start: 5;
+    grid-column-end:6;
+    grid-row-start: 9;
+    grid-row-end: 13;
+    border-radius: 25px;
+    background-image: url('./img12.webp');
+    background-size: cover;
+    color: white;
+}
+#a2:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+    
+}
+#a3:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+#a4:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+#a5:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+#a6:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+#a7:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+#a8:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+#a9:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+#a10:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+#a11:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+#a12:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+#a13:hover{
+    transform: scale(.8);
+    transition-duration: 3s;
+}

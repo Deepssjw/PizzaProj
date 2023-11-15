@@ -1,0 +1,10 @@
+.txtDanger{
+    color: red;
+    font-size: 30px;
+    background-color: rgba(21, 180, 208, 0.204);
+}
+.txtSuccess{
+    color: green;
+    font-size: 20px;
+    background-color: rgba(208, 199, 21, 0.796);
+}

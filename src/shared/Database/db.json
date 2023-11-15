@@ -1,0 +1,39 @@
+{
+  "product": [
+    {
+      "id": 101,
+      "pname": "Laptop",
+      "pprice": "555555",
+      "pcompany": "Hp",
+      "paddress": "Pune"
+    },
+    {
+      "id": 102,
+      "pname": "Adapter",
+      "pprice": 4000,
+      "pcompany": "Sony",
+      "paddress": "Mumbai"
+    },
+    {
+      "id": 103,
+      "pname": "Mouse",
+      "pprice": 800,
+      "pcompany": "Iboll",
+      "paddress": "Nagpur"
+    },
+    {
+      "pname": "Mobile",
+      "pprice": "20000",
+      "pcompany": "Oppo",
+      "paddress": "changepond",
+      "id": 104
+    },
+    {
+      "pname": "Watch",
+      "pprice": "100000",
+      "pcompany": "Rolex",
+      "paddress": "Aandrapradesh",
+      "id": 105
+    }
+  ]
+}
