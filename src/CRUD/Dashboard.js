@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-// import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
-// import EditIcon from '@mui/icons-material/Edit';
+import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
+import EditIcon from '@mui/icons-material/Edit';
 import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
@@ -24,14 +24,18 @@ const Dashboard = () => {
                    }).catch((err)=>{})
              }
          }
+
+
+
+
     return (
         <div>
-           <h2>This is Dashboard</h2> 
+           <h2>This is Dashboard offer</h2> 
            <Link to="/addcomp" className='btn btn-primary mb-2'>Add</Link>
            <table className='table table-hover table-striped'>
             <thead>
                 <tr className='table-dark'>
-                    <th>Id</th><th>Name</th><th>Price</th><th>Company</th><th>Address</th><th>Actions</th>
+                    <th>S.No</th><th>PizzaName</th><th>Price</th><th>Size</th><th>Offer</th><th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -41,14 +45,14 @@ const Dashboard = () => {
                             <td>{index+1}</td>
                             <td>{val.pname}</td>
                             <td>{val.pprice}</td>
-                            <td>{val.pcompany}</td>
-                            <td>{val.paddress}</td>
+                            <td>{val.psize}</td>
+                            <td>{val.poffer}</td>
                             <td>
-                                <Link to={`/editcomp/${val.id}`} className='btn btn-outline-success btn-sm'>
-                                edit
+                                <Link to={`/EditComp/${val.id}`} className='btn btn-outline-success btn-sm' >
+                                <EditIcon></EditIcon>
                                 </Link> | 
                                 <button type='button' onClick={()=>deleteProduct(val.id)} className='btn btn-outline-danger btn-sm'>
-                                Delete
+                                    <DeleteRoundedIcon ></DeleteRoundedIcon >
                                 </button>
                             </td>
                         </tr>
@@ -56,6 +60,9 @@ const Dashboard = () => {
                 }
             </tbody>
            </table>
+
+
+   
         </div>
     )
 }

@@ -1,7 +1,7 @@
-const redux = require('redux');
-const createStore =redux.createStore();
-import cake from './Cake/CakeReducer';
+// const redux = require('redux');
+// const createStore = redux.createStore;
+// import cakeReducer from './cake/cakeReducer';
 
-const store = createStore(cakeReducer)
+// const store = createStore(cakeReducer);
 
-export default store;
+// export default store;

@@ -7,11 +7,10 @@ const EditComp = () => {
     const nav = useNavigate();
     
     const [product,setProduct] =useState({
-        id:"",
         pname:"",
         pprice:"",
-        pcompany:"",
-        paddress:""
+        psize:"",
+        poffer:""
     })
     useEffect(()=>{
         axios.get(`http://localhost:8888/product/${id}`).then((res)=>{
@@ -30,7 +29,7 @@ const EditComp = () => {
             event.preventDefault();
             axios.put(`http://localhost:8888/product/${id}`,product).then(()=>{
                 window.alert("Product Updated successfully");
-                nav("/dashboard");
+                nav("/Dashboard");
             }).catch((err)=>{})
         }
     return (
@@ -38,20 +37,20 @@ const EditComp = () => {
             <h2>This is Edit Component</h2>
             <form onSubmit={updateproduct}>
               <div className='form-group'>
-                   <label className='form-label'>Enter Product Name</label>
+                   <label className='form-label'>Enter Pizza Name</label>
                    <input type='text' name='pname' className='form-control' onChange={inputHandler} value={product.pname}/>
               </div>
               <div className='form-group'>
-                   <label className='form-label'>Enter Product Price</label>
+                   <label className='form-label'>Enter Pizza Price</label>
                    <input type='text' name='pprice' className='form-control' onChange={inputHandler} value={product.pprice}/>
               </div>
               <div className='form-group'>
-                   <label className='form-label'>Enter Product Company</label>
-                   <input type='text' name='pcompany' className='form-control' onChange={inputHandler} value={product.pcompany}/>
+                   <label className='form-label'>Enter Pizza Size</label>
+                   <input type='text' name='psize' className='form-control' onChange={inputHandler} value={product.psize}/>
               </div>
               <div className='form-group'>
-                   <label className='form-label'>Enter Product Address</label>
-                   <input type='text' name='paddress' className='form-control' onChange={inputHandler} value={product.paddress}/>
+                   <label className='form-label'>Enter offer</label>
+                   <input type='text' name='poffer' className='form-control' onChange={inputHandler} value={product.poffer}/>
               </div>
               <button type='submit' className='btn btn-primary mt-2'>Submit</button>
             </form> 

@@ -14,14 +14,19 @@ import UseEffectHook from './UseEffectHookComp';
 import Dashboard from "../CRUD/Dashboard";
 import AddComp from "../CRUD/AddComp";
 import EditComp from "../CRUD/EditComp";
+import Login from "./Login";
+import ProtectedRoute from "./ProtectedRoute";
+
 import { Provider } from "react-redux";
-import {state} from "react"
+import store from "./redux/store";
+import CakeContainer from "./CakeContainer";
 
 class MyRoutingComp extends Component {
   render() {
     return (
       <div>
         <BrowserRouter>
+        <Provider store={store}>
           <div className="container">
             <div className="card border-primary">
               <div className="card-header border-primary">
@@ -30,7 +35,9 @@ class MyRoutingComp extends Component {
               <div className="card-body border-primary">
                 <Routes>
                   {/* default routing  */}
-                  <Route path="" element={<MyImagesCom />}></Route>
+                  <Route path="" element={<Login/>}></Route>
+                  <Route path="login" element={<Login/>}></Route>
+                  {/* <Route path="" element={<MyImagesCom />}></Route> */}
                   {/* naming routing  */}
                   <Route path="myimages" element={<MyImagesCom />}></Route>
                   <Route path="classcomp" element={<ClassComp />}></Route>
@@ -42,15 +49,21 @@ class MyRoutingComp extends Component {
                   <Route path="mycss" element={<MyCssComp />}>
                     <Route path="myevents" element={<MyEventsComp />}></Route>
                   </Route>
-                  <Route path="reacthook" element={<ReactHooksComp />}>
+                  {/* <Route path="reacthook" element={<ReactHooksComp />}> */}
+                  <Route path="reacthook" element={<ProtectedRoute Component={ReactHooksComp} />}>
                     <Route path="" element={<UseStateHookComp />}></Route>
                     <Route path="usestate" element={<UseStateHookComp />}></Route>
                     <Route path="useeffect" element={<UseEffectHook />}></Route>
                   </Route>
 
-                  <Route path="dashboard" element={<Dashboard />}></Route>
-                  <Route path="addcomp" element={<AddComp/>}></Route>
-                  <Route path="editcomp/:id" element={<EditComp/>}></Route>
+                  {/* <Route path="dashboard" element={<Dashboard />}></Route> */}
+                  <Route path="dashboard" element={<ProtectedRoute Component={Dashboard} />}></Route>
+                  {/* <Route path="addcomp" element={<AddComp/>}></Route> */}
+                  <Route path="addcomp" element={<ProtectedRoute Component={AddComp} />}></Route>
+                  {/* <Route path="editcomp/:id" element={<EditComp/>}></Route> */}
+                  <Route path="editcomp/:id" element={<ProtectedRoute Component={EditComp} />}></Route>
+                 
+                   <Route path="cakecontainer" element={<CakeContainer />}></Route>
                   {/* wild card routing  */}
                   <Route path="*" element={<PageNotFound />}></Route>
                 </Routes>
@@ -62,6 +75,7 @@ class MyRoutingComp extends Component {
               </div>
             </div>
           </div>
+          </Provider>
         </BrowserRouter>
       </div>
     );

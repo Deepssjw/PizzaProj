@@ -4,8 +4,25 @@ import LinkPage from './LinkPage';
 import './Edit.css'
 import About from './About';
 import Frontpage from './Frontpage';
-import ProjectLogin from './Login';
+
 import ProjectMenu from './Menu';
+// import Dashboard from '../CRUD/Dashboard';
+import EditComp from '../CRUD/EditComp';
+import AddComp from '../CRUD/AddComp';
+import Contact from './Contact';
+import LoginSignup from './Verification/LoginPage';
+import Registration from './Verification/Register';
+// import ProtectedRoute from '../componets/ProtectedRoute';
+import Login from './Verification/LoginPage';
+import Dashboard from '../CRUD/Dashboard';
+import ProtectedRoute from '../componets/ProtectedRoute';
+import Dashboard1 from './Dashboard';
+
+
+
+
+// import LoginPage from './LoginPage';
+
 
  class HomePage extends Component {
     render() {
@@ -35,14 +52,27 @@ import ProjectMenu from './Menu';
                             <Routes>
                                 <Route path='' element={<Frontpage></Frontpage>}></Route>
                                 <Route path='about'element={<About ></About>}></Route>
-                                <Route path='Login' element={<ProjectLogin></ProjectLogin>}></Route>
+                                <Route path="/Registration" element={<Registration/>} ></Route>
+                                 {/* <Route path="LoginSignup" element={<LoginSignup/>} ></Route> */}
                                 <Route path='Menu' element={<ProjectMenu></ProjectMenu>}></Route>
-                            
-                                               
+                                <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
+                                <Route path='Contact' element={<Contact></Contact>}></Route>
+                                {/* <Route path='LoginPage' element={<ProtectedRoute></ProtectedRoute>}></Route></Routes> */}
+                                <Route path="LoginSignup" element={<Login></Login>} ></Route>
+                                                            
+
+                                {/* <Route path="dashboard" element={<ProtectedRoute Component={Dashboard}></ProtectedRoute>}></Route>
+                
+                                 <Route path="addcomp" element={<ProtectedRoute Component={AddComp} ></ProtectedRoute>}></Route>
+               
+                                 <Route path="EditComp" element={<ProtectedRoute Component={EditComp} ></ProtectedRoute>}></Route> */}
                         
                             
+
+                                <Route path='dashboard1' element={<Dashboard1></Dashboard1>}></Route>
+
                             </Routes>
-                                
+                               
                                 
                             </div>
                         </div>
@@ -50,7 +80,7 @@ import ProjectMenu from './Menu';
                        
                        
                        
-                       
+{/*                        
                         <div className='color'>
                         <div  className=' card-footer  footer '>
                             
@@ -91,7 +121,7 @@ import ProjectMenu from './Menu';
                                 </p>
                             </div>
                             </div>
-                        </div>
+                        </div>  */}
                         
 
                     </div>

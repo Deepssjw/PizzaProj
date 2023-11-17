@@ -16,9 +16,16 @@ import { Provider } from 'react-redux';
 import { Store } from 'redux';
 import HomePage from './Project/HomePage';
 import Frontpage from './Project/Frontpage';
-import ProjectLogin from './Project/Login';
 import ProjectMenu from './Project/Menu';
-// import About from './Project/About';
+import Dashboard from './CRUD/Dashboard';
+import EditComp from './CRUD/EditComp';
+import Contact from './Project/Contact';
+import ProtectedRoute from './componets/ProtectedRoute';
+
+// import LoginSignup from './Project/Verification/LoginPage';
+
+
+// import About from './Project/ About';
 
 
 
@@ -39,9 +46,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-     <marquee bgcolor="aqua" direction="right" behavior="alternate" scrolldelay="50" scrollamount="10">
+     {/* <marquee bgcolor="aqua" direction="right" behavior="alternate" scrolldelay="50" scrollamount="10">
                 <h1>PIZZA RESTTAURENT</h1>
-            </marquee>
+            </marquee> */}
        {/* <FunctionComp myName="Panchashil" post="FUllstack Developer"/>
        <ClassComp myName="Anmol" post="Python Developer" /> */}
        {/* <MyStateComp ></MyStateComp>
@@ -53,12 +60,24 @@ function App() {
        <HoverCounter></HoverCounter> */}
        {/* <CondRenComp /> */}
        {/* <MynameComp /> */}
-       <MyRoutingComp/>
-       {/* <HomePage></HomePage> */}
+       {/* <MyRoutingComp/> */}
+       <HomePage></HomePage>
        {/* <About></About> */}
        {/* <Frontpage></Frontpage> */}
+
+
        {/* <ProjectLogin></ProjectLogin> */}
        {/* <ProjectMenu></ProjectMenu> */}
+       {/* <LoginPage></LoginPage> */}
+       
+       {/* <LoginPage12></LoginPage12> */}
+       {/* <Dashboard></Dashboard> */}
+       {/* <EditComp></EditComp> */}
+       {/* <Contact></Contact> */}
+       {/* <LoginSignup></LoginSignup> */}
+    
+       
+
      
     </div>
   );

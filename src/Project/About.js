@@ -1,5 +1,5 @@
 import React from 'react'
-import Aboutimg from "./aboutimg.jpg";
+
 
 function About() {
 
@@ -8,9 +8,12 @@ function About() {
       <div className="about">
       <div
         className="aboutTop"
-        style={{ backgroundImage: `url(${Aboutimg})` }}
-      ></div>
-      <div className="aboutBottom">
+
+        style={{ backgroundImage:" url( https://cdn1.vectorstock.com/i/1000x1000/90/55/with-blurred-pizza-background-and-label-des-vector-2549055.jpg)"}}
+      >
+
+      </div>
+        <div>
         <h1><i>ABOUT US</i> </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -27,8 +30,8 @@ function About() {
           Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates a
           cumque velit
         </p>
-      </div>
-            
+      
+        </div>     
         </div>
     )
 }

@@ -39,7 +39,7 @@
 .body3 {
     grid-column-start: 1;
     grid-column-end: 2;
-    background-image: url(Pizza1.jpg);
+    /* background-image: url(Pizza1.jpg); */
     /* background-repeat: no-repeat; */
     background-size: 100%;
     height: 70vh;
@@ -131,19 +131,23 @@
 
 .aboutTop {
     width: 100%;
-    height: 45%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
 }
 
 .aboutBottom {
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 55%;
     align-items: center;
+    background-repeat: no-repeat;
     margin-top: 50px;
+    background-image: url(https://www.shutterstock.com/image-photo/blurred-background-yummy-pizza-on-260nw-746743666.jpg);
 }
 
 .aboutBottom p {
@@ -161,7 +165,7 @@
 }
 
 
-                                /* .login */
+/* .login */
 
 
 .login {
@@ -176,7 +180,7 @@
     border: 0.2px solid white;
     grid-column-start: 1;
     grid-column-end: 2;
-    background-image: url(pizza4.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2012/07/19/02/31/pizza-maker-52557_640.jpg);
     /* background-image: url(); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,203 +205,364 @@ table {
 }
 
 
-                            /* Menu */
-.grid{
+/* Menu */
+.grid {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(12,1fr);
-    border: 1px solid black;
-    height: 100vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    /* border: 1px solid black; */
+    min-height: 100vh;
     gap: 10px;
-    
+
 }
-#a1{
+/* 
+#a1 {
     border: 1px solid black;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 13;
-}
-#a2{
-    border: 1px solid black;
-    grid-column-start: 2;
-    grid-column-end: 3;
+} */
+
+#a2 {
+    border: 1px solid white;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 5;
     border-radius: 25px;
-    background-image: url('./img1.webp');
+    background-image: url('https://cdn.pixabay.com/photo/2020/05/17/04/22/pizza-5179939_640.jpg');
     background-size: cover;
     color: white;
     font-size: large;
     font-family: cursive;
 }
-#a3{
-    border: 1px solid blue;
+
+#a3 {
+    border: 1px solid white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border-radius: 25px;
+    background-image: url('https://t3.ftcdn.net/jpg/05/60/70/82/360_F_560708240_pMZPOuSfvblWGRoaiZFLT4wiFTzQPwQe.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#a4 {
+    border: 1px solid white;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 5;
     border-radius: 25px;
-    background-image: url('./img2.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgYARcMWHjVhQj1D5beejViyThOCJP9fvGEPJnHioQxcL_20NaLHLfT6D6R3m0SM9PVng&usqp=CAU');
     background-size: cover;
     color: white;
 }
-#a4{
-    border: 1px solid blue;
+
+#a5 {
+    border: 1px solid white;
     grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    border-radius: 25px;
-    background-image: url('./img3.jpg');
-    background-size: cover;
-    color: white;
-}
-#a5{
-    border: 1px solid blue;
-    grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 5;
     border-radius: 25px;
-    background-image: url('./img4.jpg');
+    background-image: url('https://img.freepik.com/free-photo/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai_188544-12347.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1700006400&semt=ais');
     background-size: cover;
     color: white;
 }
-#a6{
-    border: 1px solid blue;
+
+#a6 {
+    border: 1px solid white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    border-radius: 25px;
+    background-image: url('https://w.forfun.com/fetch/60/6097a5e72da684293dd5bc5a5e6bb653.jpeg');
+    background-size: cover;
+    color: white;
+}
+
+#a7 {
+    border: 1px solid white;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 9;
     border-radius: 25px;
-    background-image: url('./img5.jpg');
+    background-image: url('https://img.freepik.com/free-photo/top-view-pepperoni-pizza-sliced-into-six-slices_141793-2157.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699920000&semt=ais');
     background-size: cover;
     color: white;
 }
-#a7{
-    border: 1px solid blue;
+
+#a8 {
+    border: 1px solid white;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 9;
     border-radius: 25px;
-    background-image: url('./img6.jpg');
+    background-image: url('https://images8.alphacoders.com/369/369063.jpg');
     background-size: cover;
     color: white;
 }
-#a8{
-    border: 1px solid blue;
+
+#a9 {
+    border: 1px solid white;
     grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 9;
-    border-radius: 25px;
-    background-image: url('./img7.jpg');
-    background-size: cover;
-    color: white;
-}
-#a9{
-    border: 1px solid blue;
-    grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 5;
     grid-row-end: 9;
     border-radius: 25px;
-    background-image: url('./img8.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA7dE20CcE59ER_9DPwY0AQUdBcljNMHJUIIhxI0t5ZhucrrtzOtweRF0cUA_GsqzYmrE&usqp=CAU');
     background-size: cover;
     color: white;
 }
-#a10{
-    border: 1px solid blue;
+
+#a10 {
+    border: 1px solid white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 13;
+    border-radius: 25px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvFUCzNrQjYjQs6jgP0MMb1xwTAM0EtBxGLQ&usqp=CAU');
+    background-size: cover;
+    color: white;
+}
+
+#a11 {
+    border: 1px solid white;
     grid-column-start: 2;
-    grid-column-end:3 ;
+    grid-column-end: 3;
     grid-row-start: 9;
     grid-row-end: 13;
     border-radius: 25px;
-    background-image: url('./img9.webp');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFfPd2ouOj_P806kn0-oqLAVbom52etpk3KQ&usqp=CAU');
     background-size: cover;
     color: white;
 }
-#a11{
-    border: 1px solid blue;
+
+#a12 {
+    border: 1px solid white;
     grid-column-start: 3;
-    grid-column-end:4;
+    grid-column-end: 4;
     grid-row-start: 9;
     grid-row-end: 13;
     border-radius: 25px;
-    background-image: url('./img10.webp');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVgfnZ6n4Z4QQHhc3tOIH6f7-u1u_wBxGUZg&usqp=CAU');
     background-size: cover;
     color: white;
 }
-#a12{
-    border: 1px solid blue;
+
+#a13 {
+    border: 1px solid white;
     grid-column-start: 4;
-    grid-column-end:5;
+    grid-column-end: 6;
     grid-row-start: 9;
     grid-row-end: 13;
     border-radius: 25px;
-    background-image: url('./img11.webp');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4UfqZHx0sQzf7l7yVR8lhPiPWiX61lEg3Fg&usqp=CAU');
     background-size: cover;
     color: white;
 }
-#a13{
-    border: 1px solid blue;
-    grid-column-start: 5;
-    grid-column-end:6;
-    grid-row-start: 9;
-    grid-row-end: 13;
-    border-radius: 25px;
-    background-image: url('./img12.webp');
-    background-size: cover;
-    color: white;
-}
-#a2:hover{
+
+#a2:hover {
     transform: scale(.8);
     transition-duration: 3s;
+
+}
+
+#a3:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+#a4:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+#a5:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+#a6:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+#a7:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+#a8:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+#a9:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+#a10:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+#a11:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+#a12:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+#a13:hover {
+    transform: scale(.8);
+    transition-duration: 3s;
+}
+
+
+
+
+
+
+.txtDanger {
+    color: red;
+    font-size: 30px;
+    background-color: rgba(21, 180, 208, 0.204);
+}
+
+.txtSuccess {
+    color: green;
+    font-size: 20px;
+    background-color: rgba(208, 199, 21, 0.796);
+}
+
+
+
+/* ///   Conatct */
+
+
+.contact {
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+     background-image: url("https://st4.depositphotos.com/11169808/22933/i/450/depositphotos_229330324-stock-photo-tasty-pepperoni-pizza-cooking-ingredients.jpg");
+    background-repeat: no-repeat;
+}
+
+.contact .leftSide {
+    height: 100%;
+    flex: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact .rightSide {
+    height: 100%;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact .rightSide h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-weight: 10;
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 30px;
+}
+
+form input {
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #121619;
+    color: black;
+}
+
+form textarea {
+    margin-top: 15px;
+    height: 70px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #121619;
+    color: black;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-weight: bold;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input:focus,
+textarea:focus {
+    outline: none;
+}
+
+form label {
+    margin-top: 15px;
+    color: grey;
+}
+
+form button {
+    margin-top: 40px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #121619;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.myform{
+    border: 1px solid grey;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border-radius: 9px;
+    padding: 12px;
     
 }
-#a3:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
+
+
+
+/* dashboard1 */
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    min-height: 100vh;
 }
-#a4:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
+.a{
+    border-radius: 5px;
+    width: 100px;
 }
-#a5:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
-}
-#a6:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
-}
-#a7:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
-}
-#a8:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
-}
-#a9:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
-}
-#a10:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
-}
-#a11:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
-}
-#a12:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
-}
-#a13:hover{
-    transform: scale(.8);
-    transition-duration: 3s;
-}
+
+
+
