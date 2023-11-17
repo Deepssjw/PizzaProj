@@ -22,34 +22,52 @@ const LoginSignup = () => {
         if (formData.email === "" || formData.email === null) {
             isvalid = false;
             validationErrors.email = "Email is required"
-        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i) {
+        } else if (!/^[A-Z0-9._%+-]+@[A-Z.-]+\.[A-Z]$/i) {
             isvalid = false;
             validationErrors.email = "Email is Not valid"
         }
         if (formData.password === "" || formData.password === null) {
             isvalid = false;
-            validationErrors.password = "Last name required"
+            validationErrors.password = "Password required"
         } else if (formData.password.length < 6) {
             isvalid = false;
             validationErrors.password = "Password length must above 6 characters"
         }
 
-        axios.get('http://localhost:8888/admin').then(result =>{
-            result.data.map(user => {
-                if (user.email === "admin@gmail.com" && user.password === "durai@123"){
-                    alert("Welcome Admin Page")
-                    navigate('/dashboard')
-                }
+
+
+        axios.get('http://localhost:8888/admin')
+            .then(result => {
+                result.data.map(user => {
+                    if (user.email === formData.email) {
+                        if (user.password === formData.password) {
+                            alert("Welcome Admin Page")
+                            navigate('/dashboard')
+                        }
+                        else if ((user.password !== formData.password)) {
+                            isvalid = false;
+                            validationErrors.password = "Wrong Password"
+                        }
+                    }
+                    else if (formData.email !== "") {
+                        isvalid = false;
+                        validationErrors.email = "Wrong Email"
+                    }
+                })
+                setErrors(validationErrors)
+                setValid(isvalid)
             })
-        })
+            .catch(err => console.log(err))
+
+
+
 
         axios.get('http://localhost:8888/users1')
             .then(result => {
                 result.data.map(user => {
-                                       
-                   if (user.email === formData.email) {
+                    if (user.email === formData.email) {
                         if (user.password === formData.password) {
-                            alert("Login Successfully")
+                            alert("Welcome User ")
                             navigate('/dashboard1')
                         }
                         else if ((user.password !== formData.password)) {
@@ -76,7 +94,7 @@ const LoginSignup = () => {
                     <div class="col-md-6 offset-md-3">
                         <div class="signup-form">
                             <form class="mt-5 border p-4 bg-light shadow" onSubmit={handleSubmit}>
-                                <h4 class="mb-5 text-secondary">Create Your Account</h4>
+                                <h4 class="mb-5 text-secondary">Login</h4>
                                 <div class="row">
 
 

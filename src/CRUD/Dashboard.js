@@ -30,8 +30,8 @@ const Dashboard = () => {
 
     return (
         <div>
-           <h2>This is Dashboard offer</h2> 
-           <Link to="/addcomp" className='btn btn-primary mb-2'>Add</Link>
+           {/* <h2>This is Dashboard offer</h2>  */}
+           <Link to={`/addcomp/`} className='btn btn-primary mb-2'>Add</Link>
            <table className='table table-hover table-striped'>
             <thead>
                 <tr className='table-dark'>
@@ -48,7 +48,7 @@ const Dashboard = () => {
                             <td>{val.psize}</td>
                             <td>{val.poffer}</td>
                             <td>
-                                <Link to={`/EditComp/${val.id}`} className='btn btn-outline-success btn-sm' >
+                                <Link to={`/EditComp/`} className='btn btn-outline-success btn-sm' >
                                 <EditIcon></EditIcon>
                                 </Link> | 
                                 <button type='button' onClick={()=>deleteProduct(val.id)} className='btn btn-outline-danger btn-sm'>

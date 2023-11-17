@@ -13,7 +13,7 @@ const EditComp = () => {
         poffer:""
     })
     useEffect(()=>{
-        axios.get(`http://localhost:8888/product/${id}`).then((res)=>{
+        axios.get("http://localhost:8888/product").then((res)=>{
             // console.log(res.data);
             setProduct(res.data)
         }).catch((err)=>{})
@@ -27,7 +27,7 @@ const EditComp = () => {
         }
         const updateproduct = (event)=>{
             event.preventDefault();
-            axios.put(`http://localhost:8888/product/${id}`,product).then(()=>{
+            axios.put("http://localhost:8888/product",product).then(()=>{
                 window.alert("Product Updated successfully");
                 nav("/Dashboard");
             }).catch((err)=>{})

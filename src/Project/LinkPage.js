@@ -32,7 +32,7 @@ const LinkPage = () => {
             {/* <Link to="dashboard1" className='btn btn-secondary btn-sm'>Dashboard</Link> */}
             
             {/* <Link to="dashboard" className='btn btn-secondary btn-sm'>Dashboard</Link>{" "} */}
-           
+           <Link to="home" className='btn btn-secondary btn-sm'>CARD PAGE</Link>{" "}
 
 
             {/* <Link to="LoginPage" className='btn btn-secondary btn-sm'>LOGINPAGE</Link> */}

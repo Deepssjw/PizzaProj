@@ -566,3 +566,21 @@ form button {
 
 
 
+/* card */
+
+
+
+h1{
+    font-size: 20px !important;
+  }
+  .flex-container{
+    display: flex !important;
+  }
+  .btn1{
+    background-color: red !important;
+    color: white !important;
+  }
+  select{
+    box-shadow: none !important;
+    border-color: black !important;
+  }

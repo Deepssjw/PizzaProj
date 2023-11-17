@@ -21,6 +21,8 @@ import Dashboard from './CRUD/Dashboard';
 import EditComp from './CRUD/EditComp';
 import Contact from './Project/Contact';
 import ProtectedRoute from './componets/ProtectedRoute';
+import NavComp from './componets/NavComp';
+import Homescreen from './Project/HomeSreen';
 
 // import LoginSignup from './Project/Verification/LoginPage';
 
@@ -61,7 +63,7 @@ function App() {
        {/* <CondRenComp /> */}
        {/* <MynameComp /> */}
        {/* <MyRoutingComp/> */}
-       <HomePage></HomePage>
+       <HomePage></HomePage> 
        {/* <About></About> */}
        {/* <Frontpage></Frontpage> */}
 
@@ -75,8 +77,9 @@ function App() {
        {/* <EditComp></EditComp> */}
        {/* <Contact></Contact> */}
        {/* <LoginSignup></LoginSignup> */}
+       {/* <NavComp></NavComp> */}
     
-       
+       {/* <Homescreen></Homescreen> */}
 
      
     </div>

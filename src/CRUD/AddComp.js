@@ -6,8 +6,8 @@ const AddComp = () => {
     const [product,setProduct] =useState({
         pname:"",
         pprice:"",
-        pcompany:"",
-        paddress:""
+        psize:"",
+        poffer:""
     })
     const inputHandler = (event)=>{
     //  console.log(event.target.type)
@@ -36,11 +36,11 @@ const AddComp = () => {
               </div>
               <div className='form-group'>
                    <label className='form-label'>Enter Pizza Size</label>
-                   <input type='text' name='pcompany' className='form-control' onChange={inputHandler} value={product.pcompany}/>
+                   <input type='text' name='psize' className='form-control' onChange={inputHandler} value={product.psize}/>
               </div>
               <div className='form-group'>
                    <label className='form-label'>Enter offer</label>
-                   <input type='text' name='paddress' className='form-control' onChange={inputHandler} value={product.paddress}/>
+                   <input type='text' name='poffer' className='form-control' onChange={inputHandler} value={product.poffer}/>
               </div>
               <button type='submit' className='btn btn-primary mt-2'>Submit</button>
             </form> 

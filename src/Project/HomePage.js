@@ -17,6 +17,7 @@ import Login from './Verification/LoginPage';
 import Dashboard from '../CRUD/Dashboard';
 import ProtectedRoute from '../componets/ProtectedRoute';
 import Dashboard1 from './Dashboard';
+import Homescreen from './HomeSreen';
 
 
 
@@ -61,13 +62,13 @@ import Dashboard1 from './Dashboard';
                                 <Route path="LoginSignup" element={<Login></Login>} ></Route>
                                                             
 
-                                {/* <Route path="dashboard" element={<ProtectedRoute Component={Dashboard}></ProtectedRoute>}></Route>
+                                <Route path="dashboard" element={<Dashboard></Dashboard>}></Route>
                 
-                                 <Route path="addcomp" element={<ProtectedRoute Component={AddComp} ></ProtectedRoute>}></Route>
+                                 <Route path="/addcomp" element={<AddComp></AddComp>}></Route>
                
-                                 <Route path="EditComp" element={<ProtectedRoute Component={EditComp} ></ProtectedRoute>}></Route> */}
+                                 <Route path="/EditComp" element={<EditComp></EditComp>}></Route>
                         
-                            
+                                <Route path='home' element={<Homescreen></Homescreen>}></Route>
 
                                 <Route path='dashboard1' element={<Dashboard1></Dashboard1>}></Route>
 

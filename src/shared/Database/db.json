@@ -8,18 +8,18 @@
       "poffer": "10%"
     },
     {
-      "id": 2,
-      "pname": "D'pizza Plaza",
-      "pprice": 350,
-      "psize": "small",
-      "poffer": "20%"
-    },
-    {
       "id": 3,
       "pname": "Delicacy Pizza",
       "pprice": 300,
       "psize": "small",
       "poffer": "20%"
+    },
+    {
+      "pname": "Pizza4",
+      "pprice": "500",
+      "psize": "Medium",
+      "poffer": "25%",
+      "id": 5
     }
   ],
   "users": [
@@ -80,7 +80,6 @@
       "cpassword": "durai@123",
       "id": 5
     },
-
     {
       "fname": "Deepak",
       "lname": "N",
@@ -104,6 +103,30 @@
       "password": "ragul123",
       "cpassword": "ragul123",
       "id": 8
+    },
+    {
+      "fname": "dummy",
+      "lname": "d",
+      "email": "dummy@gmail.com",
+      "password": "durai@123",
+      "cpassword": "durai@123",
+      "id": 9
+    },
+    {
+      "fname": "dummy",
+      "lname": "d",
+      "email": "dummy@gmail.com",
+      "password": "durai@123",
+      "cpassword": "durai@123",
+      "id": 10
+    },
+    {
+      "fname": "Deepak",
+      "lname": "last1",
+      "email": "deepak123@gmail.com",
+      "password": "123456",
+      "cpassword": "123456",
+      "id": 11
     }
   ],
   "contact": [
@@ -118,11 +141,27 @@
       "email": "5tews@gmail",
       "message": "terrt",
       "id": 2
+    },
+    {
+      "name": "Durai",
+      "email": "duraimurugan@gmail.com",
+      "message": "Hello ",
+      "id": 3
+    },
+    {
+      "name": "Deepak1",
+      "email": "deepak1@gmail.com",
+      "message": "Checking",
+      "id": 4
     }
   ],
-  "admin" :[
+  "admin": [
     {
       "email": "admin@gmail.com",
+      "password": "durai@123"
+    },
+    {
+      "email": "ragul123@gmail.com",
       "password": "durai@123"
     }
   ]
