@@ -13,7 +13,7 @@ const EditComp = () => {
         poffer:""
     })
     useEffect(()=>{
-        axios.get("http://localhost:8888/product").then((res)=>{
+        axios.get("http://localhost:8888/product",product).then((res)=>{
             // console.log(res.data);
             setProduct(res.data)
         }).catch((err)=>{})
@@ -27,14 +27,14 @@ const EditComp = () => {
         }
         const updateproduct = (event)=>{
             event.preventDefault();
-            axios.put("http://localhost:8888/product",product).then(()=>{
+            axios.put(`http://localhost:8888/product ${id}`,product).then(()=>{
                 window.alert("Product Updated successfully");
                 nav("/Dashboard");
             }).catch((err)=>{})
         }
     return (
         <div>
-            <h2>This is Edit Component</h2>
+            <h2>Edit the Product Details</h2>
             <form onSubmit={updateproduct}>
               <div className='form-group'>
                    <label className='form-label'>Enter Pizza Name</label>

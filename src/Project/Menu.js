@@ -3,8 +3,8 @@ import './Edit.css'
 
 const ProjectMenu = () => {
     return (
-        <div className='container'>
-         <div class="grid">
+        <div className='container '>
+         <div class="grid ">
                
                
                 <div id='a2' className='card'>

@@ -68,7 +68,7 @@ const LoginSignup = () => {
                     if (user.email === formData.email) {
                         if (user.password === formData.password) {
                             alert("Welcome User ")
-                            navigate('/dashboard1')
+                            navigate('/home')
                         }
                         else if ((user.password !== formData.password)) {
                             isvalid = false;

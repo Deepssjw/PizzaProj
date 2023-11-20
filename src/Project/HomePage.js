@@ -28,7 +28,7 @@ import Homescreen from './HomeSreen';
  class HomePage extends Component {
     render() {
         return (
-            <div className='container-fuiled '>
+            <div className='container-fuiled ' >
                 <BrowserRouter>
                 
                    
@@ -66,7 +66,7 @@ import Homescreen from './HomeSreen';
                 
                                  <Route path="/addcomp" element={<AddComp></AddComp>}></Route>
                
-                                 <Route path="/EditComp" element={<EditComp></EditComp>}></Route>
+                                 <Route path="/EditComp/:id" element={<EditComp></EditComp>}></Route>
                         
                                 <Route path='home' element={<Homescreen></Homescreen>}></Route>
 

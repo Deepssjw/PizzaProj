@@ -42,7 +42,8 @@ export default function Pizzacomp({ pizza }) {
                     <h1>price : {pizza.prices[0][varient] * quantity} Rs/-</h1>
                 </div>
                 <div className='m-1 w-100'>
-                    <button className='btn1'>ADD TO CART</button>
+                    <button className='btn1'  href="https://www.zomato.com/users/durai-murugan-b-s-321955308/bookmarks" >ADD TO CART</button>
+                    {/* <a className="btn1 " href="https://www.zomato.com/users/durai-murugan-b-s-321955308/bookmarks">CART</a> */}
                 </div>
 
             </div>

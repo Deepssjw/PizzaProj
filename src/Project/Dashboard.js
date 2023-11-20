@@ -5,7 +5,7 @@ import React from 'react'
 
 const Dashboard1 = () => {
     return (
-        <div className='container-fluid grid' >
+        <div className='container-fluid grid ' >
             <div className='card height="200px ' >
                         <div className='card-body'><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpudoEBI10X2jSyYYeQwpcvLmzk1L6WhWhIQ&usqp=CAU' height={300} width={200}/></div>
                         <div className='card-footer '>

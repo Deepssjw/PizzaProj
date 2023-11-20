@@ -7,6 +7,9 @@
 
 }
 
+.tittle{
+    color: chocolate;
+}
 
 .footer1 {
     display: grid;
@@ -584,3 +587,5 @@ h1{
     box-shadow: none !important;
     border-color: black !important;
   }
+
+
